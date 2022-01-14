@@ -11,7 +11,7 @@ const Money = () => {
             <View style={{flexDirection:"row",elevation:4,alignItems:"center",borderBottomLeftRadius:1,borderBottomRightRadius:1, borderColor:"#A9AAAC", height:60,marginTop:Constant.statusBarHeight,backgroundColor:"#FFFFFF",}}>
                 <Ionicons onPress={()=>navigation.goBack()} style={{width:"15%",height:40,marginLeft:5,paddingLeft:10,paddingTop:5,}} name="arrow-back-outline" size={28} color="#A9AAAC" />
                 <View style={{width:"80%",flexDirection:"row",alignItems:"center",justifyContent:"flex-end"}}>
-                    <FontAwesome  name="dollar" size={24} color="black" />
+                    <FontAwesome  name="dollar" size={24} color="#0D8AF0" />
                     <Text style={{fontSize:25,color:"black",fontWeight:"bold"}}>100</Text>
                 </View>
             </View>
@@ -71,3 +71,14 @@ const styles = StyleSheet.create({
         justifyContent:"center",
     }
 })
+
+
+
+
+
+
+
+
+
+
+

@@ -4,10 +4,7 @@ import HomeCard from '../HomeCard/HomeCard'
 
 const Home = () => {
     return (
-           <ScrollView style={{marginBottom:1}}>
-                <HomeCard></HomeCard>
-                <HomeCard></HomeCard>
-                <HomeCard></HomeCard>
+           <ScrollView>
                 <HomeCard></HomeCard>
            </ScrollView>
     )

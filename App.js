@@ -16,6 +16,11 @@ import Menu from './src/components/BottomNavigationDetail/Menu/Menu';
 import Money from './src/components/TobBarNavigationDetails/Money/Money';
 import Profile from './src/components/TobBarNavigationDetails/Profile/Profile';
 import Header from './src/components/Header/Header';
+import Follower from './src/components/MenuBarDetail/Follower/Follower';
+import AddPayment from './src/components/MenuBarDetail/AddPayment/AddPayment';
+import Setting from './src/components/MenuBarDetail/Setting/Setting';
+import Faq from './src/components/MenuBarDetail/Faq/Faq';
+import WithDraw from './src/components/MenuBarDetail/Withdraw/WithDraw';
 
 
 const Stack = createNativeStackNavigator();
@@ -52,7 +57,7 @@ const RootHome=()=>{
     })}
     >
         <Tab.Screen options={{
-          title: 'Message',
+          title: 'home',
           headerLeft:()=>{
             return<Header></Header>
           }
@@ -71,7 +76,8 @@ const RootHome=()=>{
                                 height:50,
                                 marginLeft:5,
                                 alignItems:"center",
-                                paddingTop:15}}
+                                paddingTop:15, 
+                              }}
                                 
                                 >
                              <Ionicons name="arrow-back-sharp" size={24} color="#A9AAAC" />   
@@ -173,6 +179,11 @@ export default function App() {
           <Stack.Screen name="Home" component={RootHome} />
           <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Money" component={Money} />
+          <Stack.Screen name="Follower" component={Follower} />
+          <Stack.Screen name="AddPayment" component={AddPayment} />
+          <Stack.Screen name="WithDraw" component={WithDraw} />
+          <Stack.Screen name="Setting" component={Setting} />
+          <Stack.Screen name="Faq" component={Faq} />
           <Stack.Screen name="ProfilesStack" component={ProfilesStack} />
        </Stack.Navigator>
     </NavigationContainer>
