@@ -55,6 +55,7 @@ const Menu = () => {
                 </TouchableOpacity>
            </View>
            <View style={styles.socialMedia}>
+               <Text style={{textTransform:"capitalize",color:"#A9AAAC",fontSize:15,marginLeft:5}}>follow on</Text>
                 <FontAwesome style={styles.socialMediaIcon} name="youtube-play" size={24} color="red" />
                 <FontAwesome style={styles.socialMediaIcon} name="facebook-square" size={24} color="#4267B2" />
                 <Entypo style={styles.socialMediaIcon} name="linkedin" size={24} color="#0077b5" />
@@ -96,12 +97,13 @@ const styles = StyleSheet.create({
         width:"70%",
         justifyContent:"space-between",
         flexDirection:"row",
-        marginLeft:30,
-        marginTop:110,
-        marginRight:30,
+        marginTop:115,
+        height:50,
+        alignItems:"center",
     },
     socialMediaIcon:{
-        fontSize:35,
+        fontSize:27,
+        marginRight:5
        
     }
 })

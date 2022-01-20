@@ -7,8 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 const Money = () => {
     const navigation=useNavigation(); 
     return (
-        <View style={{flex:1}}>
-            <View style={{flexDirection:"row",elevation:4,alignItems:"center",borderBottomLeftRadius:1,borderBottomRightRadius:1, borderColor:"#A9AAAC", height:60,marginTop:Constant.statusBarHeight,backgroundColor:"#FFFFFF",}}>
+        <View style={{flex:1,}}>
+            <View style={{flexDirection:"row",elevation:4,alignItems:"center",borderBottomLeftRadius:1,borderBottomRightRadius:1, backgroundColor:"#ffffff", borderColor:"#A9AAAC", height:60,marginTop:Constant.statusBarHeight,}}>
                 <Ionicons onPress={()=>navigation.goBack()} style={{width:"15%",height:40,marginLeft:5,paddingLeft:10,paddingTop:5,}} name="arrow-back-outline" size={28} color="#A9AAAC" />
                 <View style={{width:"80%",flexDirection:"row",alignItems:"center",justifyContent:"flex-end"}}>
                     <FontAwesome  name="dollar" size={24} color="#0D8AF0" />
@@ -18,26 +18,26 @@ const Money = () => {
             <View style={styles.container}>
                 <View style={styles.earningContainer}>
                    <View style={styles.inner}>
-                   <Text style={{fontSize:16,color:"#A9AAAC"}}>Total earning</Text>
-                    <Text style={{fontSize:15,fontWeight:"bold",color:"#A9AAAC"}}>$ 100</Text>
+                   <Text style={{fontSize:16,color:"#ffffff"}}>Total earning</Text>
+                    <Text style={{fontSize:15,fontWeight:"bold",color:"#ffffff"}}>$ 100</Text>
                    </View>
                 </View>
                 <View style={styles.earningContainer}>
                    <View style={styles.inner}>
-                   <Text style={{fontSize:16,color:"#A9AAAC"}}>Current earning</Text>
-                    <Text style={{fontSize:15,fontWeight:"bold",color:"#A9AAAC"}}>$ 100</Text>
+                   <Text style={{fontSize:16,color:"#ffffff"}}>Current earning</Text>
+                    <Text style={{fontSize:15,fontWeight:"bold",color:"#ffffff"}}>$ 100</Text>
                    </View>
                 </View>
                 <View style={styles.earningContainer}>
                    <View style={styles.inner}>
-                   <Text style={{fontSize:16,color:"#A9AAAC"}}>Available Withdrawal</Text>
-                    <Text style={{fontSize:15,fontWeight:"bold",color:"#A9AAAC"}}>$ 100</Text>
+                   <Text style={{fontSize:16,color:"#ffffff"}}>Available Withdrawal</Text>
+                    <Text style={{fontSize:15,fontWeight:"bold",color:"#ffffff"}}>$ 100</Text>
                    </View>
                 </View>
                 <View style={styles.earningContainer}>
                    <View style={styles.inner}>
-                   <Text style={{fontSize:16,color:"#A9AAAC"}}>Total Withdrawal</Text>
-                    <Text style={{fontSize:15,fontWeight:"bold",color:"#A9AAAC"}}>$ 100</Text>
+                   <Text style={{fontSize:16,color:"#ffffff"}}>Total Withdrawal</Text>
+                    <Text style={{fontSize:15,fontWeight:"bold",color:"#ffffff"}}>$ 100</Text>
                    </View>
                 </View>
             </View>
@@ -54,12 +54,13 @@ const styles = StyleSheet.create({
         width:"100%",
         height:"85%",
         padding:10,
+        backgroundColor:"#ffffff"
     },
     earningContainer:{
         width:"47%",
         height:"30%",
         elevation:4,
-        backgroundColor:"#ffffff",
+        backgroundColor:"#0D8AF0",
         borderRadius:5,
         borderWidth:.3,
         borderColor:"gray",

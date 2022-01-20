@@ -20,7 +20,7 @@ import Follower from './src/components/MenuBarDetail/Follower/Follower';
 import AddPayment from './src/components/MenuBarDetail/AddPayment/AddPayment';
 import Setting from './src/components/MenuBarDetail/Setting/Setting';
 import Faq from './src/components/MenuBarDetail/Faq/Faq';
-import WithDraw from './src/components/MenuBarDetail/Withdraw/WithDraw';
+import WithDraw from './src/components/MenuBarDetail/WithDraw/WithDraw';
 
 
 const Stack = createNativeStackNavigator();

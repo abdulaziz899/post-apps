@@ -50,8 +50,6 @@ const styles = StyleSheet.create({
         justifyContent:"space-between",
         borderColor:"#A9AAAC",
         borderBottomWidth:.25,
-        
-        
     },
     profileText:{
         marginLeft:12,
