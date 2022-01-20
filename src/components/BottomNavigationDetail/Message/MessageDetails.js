@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         borderBottomWidth:.5,
         borderColor:"#A9AAAC",
     },
+    
     profileImg:{
         backgroundColor:"green",
         width:50, 
