@@ -1,13 +1,17 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react'
-import { StyleSheet, Text, View,Image } from 'react-native'
+import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native';
+
 
 const MessageDetails = (props) => {
     const {name, id, img}=props.message;
+    const navigation = useNavigation();
+    
     return (
-        <View style={styles.container}>
+        <TouchableOpacity onPress={()=>navigation.navigate("SingleMessage")} style={styles.container}>
             <Image style={styles.profileImg} source={{uri:img}}/>
             <Text style={styles.profileText}>{name}</Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 
@@ -25,7 +29,6 @@ const styles = StyleSheet.create({
     },
     
     profileImg:{
-        backgroundColor:"green",
         width:50, 
         height:50,
         borderRadius:50,

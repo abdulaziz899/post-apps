@@ -1,13 +1,19 @@
 import React from 'react'
-import { StyleSheet,Image, Text, View } from 'react-native'
+import { StyleSheet,Image, Text, View ,ScrollView} from 'react-native';
+import { Entypo } from '@expo/vector-icons';
+import Home from '../../Home/Home';
+import HomeCard from '../../HomeCard/HomeCard';
 
 const Profile = () => {
     return (
-        <View style={styles.container}>
-            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+        <ScrollView>
+                <View style={{flexDirection:"row",justifyContent:"center"}}>
+                <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
                 style={{width:150, height:150,borderRadius:150}} />
-                <View style={{paddingTop:10,color:"#A9AAAC"}}>
-                    <Text>MD ABDUL AZIZ</Text>
+                </View>
+               <Entypo name="camera" size={24} color="#A9AAAC" style={{marginTop:-30,marginLeft:185,}} />
+                <View style={{paddingTop:10,color:"#A9AAAC",flexDirection:"row",justifyContent:"center"}}>
+                    <Text style={{paddingTop:5}}>MD ABDUL AZIZ</Text>
                 </View>
                 <View style={styles.following}>
                     <View style={styles.followingBox}>
@@ -23,7 +29,11 @@ const Profile = () => {
                         <Text>liked</Text>
                     </View>
                 </View>
-        </View>
+                <ScrollView>
+                    <Text style={{fontSize:17, color:"#A9AAAC",  padding:10,}}>Your Previous Post</Text>
+                    <HomeCard></HomeCard>
+                </ScrollView>
+        </ScrollView>
     )
 }
 

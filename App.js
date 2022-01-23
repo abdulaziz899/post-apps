@@ -21,6 +21,7 @@ import AddPayment from './src/components/MenuBarDetail/AddPayment/AddPayment';
 import Setting from './src/components/MenuBarDetail/Setting/Setting';
 import Faq from './src/components/MenuBarDetail/Faq/Faq';
 import WithDraw from './src/components/MenuBarDetail/WithDraw/WithDraw';
+import SingleMessage from './src/components/BottomNavigationDetail/Message/SingleMessage';
 
 
 const Stack = createNativeStackNavigator();
@@ -184,6 +185,7 @@ export default function App() {
           <Stack.Screen name="WithDraw" component={WithDraw} />
           <Stack.Screen name="Setting" component={Setting} />
           <Stack.Screen name="Faq" component={Faq} />
+          <Stack.Screen name="SingleMessage" component={SingleMessage} />
           <Stack.Screen name="ProfilesStack" component={ProfilesStack} />
        </Stack.Navigator>
     </NavigationContainer>

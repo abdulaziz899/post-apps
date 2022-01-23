@@ -1,12 +1,9 @@
 import React from 'react'
 import { StyleSheet,Image, Text, View } from 'react-native';
 
-import { Entypo,AntDesign,MaterialIcons ,FontAwesome5,MaterialCommunityIcons} from '@expo/vector-icons';
-
-
 const NotificationDetails = (props) => {
    
-    const {name,type}=props.notification;
+    const {name,type,AntDesign,FontAwesome}=props.notification;
     return (
         <View style={styles.container}>
             <View style={styles.profile}>
@@ -24,7 +21,8 @@ const NotificationDetails = (props) => {
                     </View>
                 </View>
                 <View>
-                   <MaterialIcons  style={{marginRight:10}} name="message" size={24} color="#A9AAAC" /> 
+                   {FontAwesome&&<FontAwesome  style={{marginRight:10}} name="commenting" size={24} color="#A9AAAC" /> }
+                   {AntDesign&&<AntDesign name="like2" style={{marginRight:10}} size={24} color="#A9AAAC"  />}
                 </View>
             </View>
             

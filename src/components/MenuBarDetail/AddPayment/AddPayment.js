@@ -1,10 +1,11 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react'
+import { StyleSheet, Text, View,Picker} from 'react-native';
 import { Ionicons,FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import Constant from "expo-constants";
 
 const AddPayment = () => {
+    const [selectedValue, setSelectedValue] = useState("java");
     const navigation=useNavigation(); 
     return (
         <View>
@@ -19,6 +20,16 @@ const AddPayment = () => {
                <View>
                    <Text style={{color:"#A9AAAC",fontSize:17,fontWeight:"400",textTransform:"capitalize"}}>Select your payment method</Text>
                </View>
+            </View>
+
+            <View style={{width:"100%",height:100, backgroundColor:"green"}}>
+            <Picker 
+                selectedValue={selectedValue} 
+                style={{ height: 50,backgroundColor:"green", width: 150 }}
+                onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}>
+                <Picker.Item label="Java" value="java" />
+                <Picker.Item label="JavaScript" value="js" />
+            </Picker>
             </View>
         </View>
     )
